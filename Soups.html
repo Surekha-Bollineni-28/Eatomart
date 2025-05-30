@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+    <title>Soups</title>
+</head>
+
+<body>
+    <div class="explore-menu-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="menu-section-heading">Soups</h1>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://res.cloudinary.com/dtckmd3jb/image/upload/v1748176822/Sweet-corn-soup_vbijfh.jpg"
+                            class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Masala Sweet Corn Soup</h1>
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="card-container">
+                                <p>Rs 180/-</p>
+                            </div>
+                            <div class="counter">
+                                <button onclick="decrement()" id="minusBtn">-</button>
+                                <div class="count" id="countValue">1</div>
+                                <button onclick="increment()">+</button>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button class="add-btn" onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://res.cloudinary.com/dtckmd3jb/image/upload/v1748176817/Beetroot-Coconut-Soup_dcnk4c.jpg"
+                            class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Beetroot Coconut Soup</h1>
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="card-container">
+                                <p>Rs 120/-</p>
+                            </div>
+                            <div class="counter">
+                                <button onclick="decrement()" id="minusBtn">-</button>
+                                <div class="count" id="countValue">1</div>
+                                <button onclick="increment()">+</button>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button class="add-btn" onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://res.cloudinary.com/dtckmd3jb/image/upload/v1748176817/chicken-soup_dc3xpw.jpg"
+                            class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Chicken soup</h1>
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="card-container">
+                                <p>Rs 150/-</p>
+                            </div>
+                            <div class="counter">
+                                <button onclick="decrement()" id="minusBtn">-</button>
+                                <div class="count" id="countValue">1</div>
+                                <button onclick="increment()">+</button>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button class="add-btn" onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://res.cloudinary.com/dtckmd3jb/image/upload/v1748176812/mutton-soup_cyh7ei.jpg"
+                            class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Mutton Soup</h1>
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="card-container">
+                                <p>Rs 200/-</p>
+                            </div>
+                            <div class="counter">
+                                <button onclick="decrement()" id="minusBtn">-</button>
+                                <div class="count" id="countValue">1</div>
+                                <button onclick="increment()">+</button>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button class="add-btn" onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://res.cloudinary.com/dtckmd3jb/image/upload/v1748176812/ginger-turmeric-soup_ick2ms.jpg"
+                            class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Turmeric-Ginger Root Soup</h1>
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="card-container">
+                                <p>Rs 220/-</p>
+                            </div>
+                            <div class="counter">
+                                <button onclick="decrement()" id="minusBtn">-</button>
+                                <div class="count" id="countValue">1</div>
+                                <button onclick="increment()">+</button>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button class="add-btn" onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://res.cloudinary.com/dtckmd3jb/image/upload/v1748176812/Coriander-lemon-Soup_bhxuv8.jpg"
+                            class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Lemon Coriander Soup</h1>
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="card-container">
+                                <p>Rs 250/-</p>
+                            </div>
+                            <div class="counter">
+                                <button onclick="decrement()" id="minusBtn">-</button>
+                                <div class="count" id="countValue">1</div>
+                                <button onclick="increment()">+</button>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button class="add-btn" onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://res.cloudinary.com/dtckmd3jb/image/upload/v1748176811/smoked-tomato-soup_y7q6xl.jpg"
+                            class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Smoked Baingan & Tomato Soup </h1>
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="card-container">
+                                <p>Rs 280/-</p>
+                            </div>
+                            <div class="counter">
+                                <button onclick="decrement()" id="minusBtn">-</button>
+                                <div class="count" id="countValue">1</div>
+                                <button onclick="increment()">+</button>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button class="add-btn" onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center d-flex flex-column align-items-center">
+                    <img src="https://res.cloudinary.com/dtckmd3jb/image/upload/v1748524539/eato-mart-logo.png"
+                        class="eatomart-logo" />
+                    <h1 class="footer-section-mail-id">orderfood@Eatomart.com</h1>
+                    <p class="footer-section-address">
+                        India
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

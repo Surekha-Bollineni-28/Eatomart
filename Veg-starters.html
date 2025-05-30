@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+    <title>Veg Strickers</title>
+</head>
+
+<body>
+   
+    <div class="explore-menu-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="menu-section-heading">Veg Starters</h1>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://res.cloudinary.com/dtckmd3jb/image/upload/v1748173385/crispy-paneer-tikka_ecmrtj.jpg"
+                            class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Scrispy paneer Tikka</h1>
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="card-container">
+                                <p>Rs 110/-</p>
+                            </div>
+                            <div class="counter">
+                                <button onclick="decrement()" id="minusBtn">-</button>
+                                <div class="count" id="countValue">1</div>
+                                <button onclick="increment()">+</button>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button class="add-btn" onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://res.cloudinary.com/dtckmd3jb/image/upload/v1748173379/spicy-samosas_v2j3qr.jpg"
+                            class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Spicy Samosas</h1>
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="card-container">
+                                <p>Rs 120/-</p>
+                            </div>
+                            <div class="counter">
+                                <button onclick="decrement()" id="minusBtn">-</button>
+                                <div class="count" id="countValue">1</div>
+                                <button onclick="increment()">+</button>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button class="add-btn" onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://res.cloudinary.com/dtckmd3jb/image/upload/v1748173372/stuffed-mushrooms_ldwg50.jpg"
+                            class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Stuffed Mushrooms</h1>
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="card-container">
+                                <p>Rs 220/-</p>
+                            </div>
+                            <div class="counter">
+                                <button onclick="decrement()" id="minusBtn">-</button>
+                                <div class="count" id="countValue">1</div>
+                                <button onclick="increment()">+</button>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button class="add-btn" onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://res.cloudinary.com/dtckmd3jb/image/upload/v1748173379/tangy-corn-chaat_vjlklk.jpg"
+                            class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Tangy Corn Chaat</h1>
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="card-container">
+                                <p>Rs 250/-</p>
+                            </div>
+                            <div class="counter">
+                                <button onclick="decrement()" id="minusBtn">-</button>
+                                <div class="count" id="countValue">1</div>
+                                <button onclick="increment()">+</button>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button class="add-btn" onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://res.cloudinary.com/dtckmd3jb/image/upload/v1748173372/Paneer-Bell-Pepper-Skewers_f7spjw.jpg"
+                            class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Paneer & Bell Pepper Skewers</h1>
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="card-container">
+                                <p>Rs 280/-</p>
+                            </div>
+                            <div class="counter">
+                                <button onclick="decrement()" id="minusBtn">-</button>
+                                <div class="count" id="countValue">1</div>
+                                <button onclick="increment()">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="shadow menu-item-card p-3 mb-3">
+                        <img src="https://res.cloudinary.com/dtckmd3jb/image/upload/v1748173371/Brinjal-fry_zuftrl.jpg"
+                            class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Brinjal Fry</h1>
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="card-container">
+                                <p>Rs 120/-</p>
+                            </div>
+                            <div class="counter">
+                                <button onclick="decrement()" id="minusBtn">-</button>
+                                <div class="count" id="countValue">1</div>
+                                <button onclick="increment()">+</button>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button class="add-btn" onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="shadow menu-item-card p-3 mb-3">
+                        <img src="https://res.cloudinary.com/dtckmd3jb/image/upload/v1748173371/Potato-Fry_kw38w8.jpg"
+                            class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Potato Fry</h1>
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="card-container">
+                                <p>Rs 100/-</p>
+                            </div>
+                            <div class="counter">
+                                <button onclick="decrement()" id="minusBtn">-</button>
+                                <div class="count" id="countValue">1</div>
+                                <button onclick="increment()">+</button>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button class="add-btn" onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://res.cloudinary.com/dtckmd3jb/image/upload/v1748173366/tomato-fry_trrwo2.jpg"
+                            class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Tomato Fry</h1>
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="card-container">
+                                <p>Rs 100/-</p>
+                            </div>
+                            <div class="counter">
+                                <button onclick="decrement()" id="minusBtn">-</button>
+                                <div class="count" id="countValue">1</div>
+                                <button onclick="increment()">+</button>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button class="add-btn" onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://res.cloudinary.com/dtckmd3jb/image/upload/v1748173366/ladysfinger-fry_lxyrvw.jpg"
+                            class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Lady's Finger Fry</h1>
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="card-container">
+                                <p>Rs 120/-</p>
+                            </div>
+                            <div class="counter">
+                                <button onclick="decrement()" id="minusBtn">-</button>
+                                <div class="count" id="countValue">1</div>
+                                <button onclick="increment()">+</button>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button class="add-btn" onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://res.cloudinary.com/dtckmd3jb/image/upload/v1748173366/cauliflower-fry_dr9ctn.jpg"
+                            class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Cauli flower Fry</h1>
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="card-container">
+                                <p>Rs 180/-</p>
+                            </div>
+                            <div class="counter">
+                                <button onclick="decrement()" id="minusBtn">-</button>
+                                <div class="count" id="countValue">1</div>
+                                <button onclick="increment()">+</button>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button class="add-btn" onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://res.cloudinary.com/dtckmd3jb/image/upload/v1748173365/cabbage-fry_hxv8ov.jpg"
+                            class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Cabbage Fry</h1>
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="card-container">
+                                <p>Rs 160/-</p>
+                            </div>
+                            <div class="counter">
+                                <button onclick="decrement()" id="minusBtn">-</button>
+                                <div class="count" id="countValue">1</div>
+                                <button onclick="increment()">+</button>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button class="add-btn" onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://res.cloudinary.com/dtckmd3jb/image/upload/v1748173365/tomato-dal_fkj0fe.jpg"
+                            class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Tomato Dal</h1>
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="card-container">
+                                <p>Rs 50/-</p>
+                            </div>
+                            <div class="counter">
+                                <button onclick="decrement()" id="minusBtn">-</button>
+                                <div class="count" id="countValue">1</div>
+                                <button onclick="increment()">+</button>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button class="add-btn" onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://res.cloudinary.com/dtckmd3jb/image/upload/v1748173365/Rasam_k9rh8l.jpg"
+                            class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Rasam</h1>
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="card-container">
+                                <p>Rs 50/-</p>
+                            </div>
+                            <div class="counter">
+                                <button onclick="decrement()" id="minusBtn">-</button>
+                                <div class="count" id="countValue">1</div>
+                                <button onclick="increment()">+</button>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button class="add-btn" onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://res.cloudinary.com/dtckmd3jb/image/upload/v1748173482/sambar_htytvu.jpg"
+                            class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">sambar</h1>
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="card-container">
+                                <p>Rs 80/-</p>
+                            </div>
+                            <div class="counter">
+                                <button onclick="decrement()" id="minusBtn">-</button>
+                                <div class="count" id="countValue">1</div>
+                                <button onclick="increment()">+</button>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button class="add-btn" onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center d-flex flex-column align-items-center">
+                    <img src="https://res.cloudinary.com/dtckmd3jb/image/upload/v1748524539/eato-mart-logo.png"
+                        class="eatomart-logo" />
+                    <h1 class="footer-section-mail-id">orderfood@Eatomart.com</h1>
+                    <p class="footer-section-address">
+                        India
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
